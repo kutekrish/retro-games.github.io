@@ -1,0 +1,797 @@
+// Paste your full JSON (from elderSlots_dailyStreak_2.txt) into a variable
+const elderSlotsData = {
+  elderSlots_dailyStreak: 2,
+  elderSlots_eventModifiers: {},
+  elderSlots_freeSpinCarryover: 0,
+  elderSlots_freeSpinsAvailable: 0,
+  elderSlots_freeSpinsCap: 15,
+  elderSlots_gameState: {
+    "playerName": "Krishna Sundar",
+    "playerLevel": 30,
+    "playerXP": 2970,
+    "coins": 355,
+    "totalCoinsEarned": 1815,
+    "totalSpins": 232,
+    "biggestWin": 150,
+    "freeSpinsAvailable": 0,
+    "freeSpinsCap": 15,
+    "freeSpinCarryover": 0,
+    "dailyStreak": 2,
+    "lastFreeSpinGrant": "2026-05-31T09:01:18.026Z",
+    "streakBonus": 2,
+    "longestStreak": 2,
+    "welcomePackClaimed": true,
+    "currentLocationId": "kitchen",
+    "visitedLocationsToday": [],
+    "lastVisitDate": "2026-05-31",
+    "unlockedLocations": [
+        "garden",
+        "kitchen",
+        "farm",
+        "beach",
+        "christmas",
+        "safari",
+        "japan",
+        "paris",
+        "casino",
+        "space"
+    ],
+    "collectibles": [
+        {
+            "id": "garden_collectible_0",
+            "name": "Grandma's Garden Sunflower",
+            "emoji": "🌻",
+            "description": "A special Sunflower from Grandma's Garden",
+            "category": "Grandma's Garden",
+            "rarity": "common",
+            "locationId": "garden",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T06:44:44.443Z"
+        },
+        {
+            "id": "garden_collectible_1",
+            "name": "Grandma's Garden Rose",
+            "emoji": "🌹",
+            "description": "A special Rose from Grandma's Garden",
+            "category": "Grandma's Garden",
+            "rarity": "common",
+            "locationId": "garden",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T06:44:11.947Z"
+        },
+        {
+            "id": "garden_collectible_2",
+            "name": "Grandma's Garden Tulip",
+            "emoji": "🌷",
+            "description": "A special Tulip from Grandma's Garden",
+            "category": "Grandma's Garden",
+            "rarity": "uncommon",
+            "locationId": "garden",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T06:43:38.756Z"
+        },
+        {
+            "id": "garden_collectible_3",
+            "name": "Grandma's Garden Butterfly",
+            "emoji": "🦋",
+            "description": "A special Butterfly from Grandma's Garden",
+            "category": "Grandma's Garden",
+            "rarity": "uncommon",
+            "locationId": "garden",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T06:45:31.690Z"
+        },
+        {
+            "id": "garden_collectible_4",
+            "name": "Grandma's Garden Ladybug",
+            "emoji": "🐞",
+            "description": "A special Ladybug from Grandma's Garden",
+            "category": "Grandma's Garden",
+            "rarity": "rare",
+            "locationId": "garden",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T06:44:32.619Z"
+        },
+        {
+            "id": "garden_collectible_5",
+            "name": "Grandma's Garden Honey Bee",
+            "emoji": "🐝",
+            "description": "A special Honey Bee from Grandma's Garden",
+            "category": "Grandma's Garden",
+            "rarity": "rare",
+            "locationId": "garden",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T06:48:33.633Z"
+        },
+        {
+            "id": "garden_collectible_6",
+            "name": "Golden Watering Can",
+            "emoji": "🏆",
+            "description": "The ultimate prize from Grandma's Garden!",
+            "category": "Grandma's Garden",
+            "rarity": "legendary",
+            "locationId": "garden",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T06:53:03.680Z"
+        },
+        {
+            "id": "kitchen_collectible_0",
+            "name": "Cozy Kitchen Cookie",
+            "emoji": "🍪",
+            "description": "A special Cookie from Cozy Kitchen",
+            "category": "Cozy Kitchen",
+            "rarity": "common",
+            "locationId": "kitchen",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T09:37:38.851Z"
+        },
+        {
+            "id": "kitchen_collectible_1",
+            "name": "Cozy Kitchen Birthday Cake",
+            "emoji": "🎂",
+            "description": "A special Birthday Cake from Cozy Kitchen",
+            "category": "Cozy Kitchen",
+            "rarity": "common",
+            "locationId": "kitchen",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T10:31:44.173Z"
+        },
+        {
+            "id": "kitchen_collectible_2",
+            "name": "Cozy Kitchen Pie",
+            "emoji": "🥧",
+            "description": "A special Pie from Cozy Kitchen",
+            "category": "Cozy Kitchen",
+            "rarity": "uncommon",
+            "locationId": "kitchen",
+            "obtained": false
+        },
+        {
+            "id": "kitchen_collectible_3",
+            "name": "Cozy Kitchen Donut",
+            "emoji": "🍩",
+            "description": "A special Donut from Cozy Kitchen",
+            "category": "Cozy Kitchen",
+            "rarity": "uncommon",
+            "locationId": "kitchen",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T11:37:16.323Z"
+        },
+        {
+            "id": "kitchen_collectible_4",
+            "name": "Cozy Kitchen Cupcake",
+            "emoji": "🧁",
+            "description": "A special Cupcake from Cozy Kitchen",
+            "category": "Cozy Kitchen",
+            "rarity": "rare",
+            "locationId": "kitchen",
+            "obtained": true,
+            "obtainedDate": "2026-05-31T09:39:58.409Z"
+        },
+        {
+            "id": "kitchen_collectible_5",
+            "name": "Cozy Kitchen Ice Cream",
+            "emoji": "🍦",
+            "description": "A special Ice Cream from Cozy Kitchen",
+            "category": "Cozy Kitchen",
+            "rarity": "rare",
+            "locationId": "kitchen",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T11:37:22.594Z"
+        },
+        {
+            "id": "kitchen_collectible_6",
+            "name": "Golden Rolling Pin",
+            "emoji": "🏆",
+            "description": "The ultimate prize from Cozy Kitchen!",
+            "category": "Cozy Kitchen",
+            "rarity": "legendary",
+            "locationId": "kitchen",
+            "obtained": false
+        },
+        {
+            "id": "beach_collectible_0",
+            "name": "Sunny Beach Seashell",
+            "emoji": "🐚",
+            "description": "A special Seashell from Sunny Beach",
+            "category": "Sunny Beach",
+            "rarity": "common",
+            "locationId": "beach",
+            "obtained": false
+        },
+        {
+            "id": "beach_collectible_1",
+            "name": "Sunny Beach Fish",
+            "emoji": "🐟",
+            "description": "A special Fish from Sunny Beach",
+            "category": "Sunny Beach",
+            "rarity": "common",
+            "locationId": "beach",
+            "obtained": false
+        },
+        {
+            "id": "beach_collectible_2",
+            "name": "Sunny Beach Crab",
+            "emoji": "🦀",
+            "description": "A special Crab from Sunny Beach",
+            "category": "Sunny Beach",
+            "rarity": "uncommon",
+            "locationId": "beach",
+            "obtained": false
+        },
+        {
+            "id": "beach_collectible_3",
+            "name": "Sunny Beach Dolphin",
+            "emoji": "🐬",
+            "description": "A special Dolphin from Sunny Beach",
+            "category": "Sunny Beach",
+            "rarity": "uncommon",
+            "locationId": "beach",
+            "obtained": false
+        },
+        {
+            "id": "beach_collectible_4",
+            "name": "Sunny Beach Octopus",
+            "emoji": "🐙",
+            "description": "A special Octopus from Sunny Beach",
+            "category": "Sunny Beach",
+            "rarity": "rare",
+            "locationId": "beach",
+            "obtained": false
+        },
+        {
+            "id": "beach_collectible_5",
+            "name": "Sunny Beach Whale",
+            "emoji": "🐳",
+            "description": "A special Whale from Sunny Beach",
+            "category": "Sunny Beach",
+            "rarity": "rare",
+            "locationId": "beach",
+            "obtained": false
+        },
+        {
+            "id": "beach_collectible_6",
+            "name": "Golden Seashell",
+            "emoji": "🏆",
+            "description": "The ultimate prize from Sunny Beach!",
+            "category": "Sunny Beach",
+            "rarity": "legendary",
+            "locationId": "beach",
+            "obtained": false
+        },
+        {
+            "id": "safari_collectible_0",
+            "name": "Wild Safari Zebra",
+            "emoji": "🦓",
+            "description": "A special Zebra from Wild Safari",
+            "category": "Wild Safari",
+            "rarity": "common",
+            "locationId": "safari",
+            "obtained": false
+        },
+        {
+            "id": "safari_collectible_1",
+            "name": "Wild Safari Giraffe",
+            "emoji": "🦒",
+            "description": "A special Giraffe from Wild Safari",
+            "category": "Wild Safari",
+            "rarity": "common",
+            "locationId": "safari",
+            "obtained": false
+        },
+        {
+            "id": "safari_collectible_2",
+            "name": "Wild Safari Elephant",
+            "emoji": "🐘",
+            "description": "A special Elephant from Wild Safari",
+            "category": "Wild Safari",
+            "rarity": "uncommon",
+            "locationId": "safari",
+            "obtained": false
+        },
+        {
+            "id": "safari_collectible_3",
+            "name": "Wild Safari Hippo",
+            "emoji": "🦛",
+            "description": "A special Hippo from Wild Safari",
+            "category": "Wild Safari",
+            "rarity": "uncommon",
+            "locationId": "safari",
+            "obtained": false
+        },
+        {
+            "id": "safari_collectible_4",
+            "name": "Wild Safari Gorilla",
+            "emoji": "🦍",
+            "description": "A special Gorilla from Wild Safari",
+            "category": "Wild Safari",
+            "rarity": "rare",
+            "locationId": "safari",
+            "obtained": false
+        },
+        {
+            "id": "safari_collectible_5",
+            "name": "Wild Safari Lion King",
+            "emoji": "🦁",
+            "description": "A special Lion King from Wild Safari",
+            "category": "Wild Safari",
+            "rarity": "rare",
+            "locationId": "safari",
+            "obtained": false
+        },
+        {
+            "id": "safari_collectible_6",
+            "name": "Golden Binoculars",
+            "emoji": "🏆",
+            "description": "The ultimate prize from Wild Safari!",
+            "category": "Wild Safari",
+            "rarity": "legendary",
+            "locationId": "safari",
+            "obtained": false
+        },
+        {
+            "id": "paris_collectible_0",
+            "name": "Paris Romance Baguette",
+            "emoji": "🥖",
+            "description": "A special Baguette from Paris Romance",
+            "category": "Paris Romance",
+            "rarity": "common",
+            "locationId": "paris",
+            "obtained": false
+        },
+        {
+            "id": "paris_collectible_1",
+            "name": "Paris Romance Wine",
+            "emoji": "🍷",
+            "description": "A special Wine from Paris Romance",
+            "category": "Paris Romance",
+            "rarity": "common",
+            "locationId": "paris",
+            "obtained": false
+        },
+        {
+            "id": "paris_collectible_2",
+            "name": "Paris Romance Cheese",
+            "emoji": "🧀",
+            "description": "A special Cheese from Paris Romance",
+            "category": "Paris Romance",
+            "rarity": "uncommon",
+            "locationId": "paris",
+            "obtained": false
+        },
+        {
+            "id": "paris_collectible_3",
+            "name": "Paris Romance Croissant",
+            "emoji": "🥐",
+            "description": "A special Croissant from Paris Romance",
+            "category": "Paris Romance",
+            "rarity": "uncommon",
+            "locationId": "paris",
+            "obtained": false
+        },
+        {
+            "id": "paris_collectible_4",
+            "name": "Paris Romance Bouquet",
+            "emoji": "💐",
+            "description": "A special Bouquet from Paris Romance",
+            "category": "Paris Romance",
+            "rarity": "rare",
+            "locationId": "paris",
+            "obtained": false
+        },
+        {
+            "id": "paris_collectible_5",
+            "name": "Paris Romance Art Palette",
+            "emoji": "🎨",
+            "description": "A special Art Palette from Paris Romance",
+            "category": "Paris Romance",
+            "rarity": "rare",
+            "locationId": "paris",
+            "obtained": false
+        },
+        {
+            "id": "paris_collectible_6",
+            "name": "Golden Eiffel Tower",
+            "emoji": "🏆",
+            "description": "The ultimate prize from Paris Romance!",
+            "category": "Paris Romance",
+            "rarity": "legendary",
+            "locationId": "paris",
+            "obtained": false
+        },
+        {
+            "id": "space_collectible_0",
+            "name": "Outer Space Star",
+            "emoji": "⭐",
+            "description": "A special Star from Outer Space",
+            "category": "Outer Space",
+            "rarity": "common",
+            "locationId": "space",
+            "obtained": false
+        },
+        {
+            "id": "space_collectible_1",
+            "name": "Outer Space Moon",
+            "emoji": "🌙",
+            "description": "A special Moon from Outer Space",
+            "category": "Outer Space",
+            "rarity": "common",
+            "locationId": "space",
+            "obtained": false
+        },
+        {
+            "id": "space_collectible_2",
+            "name": "Outer Space Saturn",
+            "emoji": "🪐",
+            "description": "A special Saturn from Outer Space",
+            "category": "Outer Space",
+            "rarity": "uncommon",
+            "locationId": "space",
+            "obtained": false
+        },
+        {
+            "id": "space_collectible_3",
+            "name": "Outer Space Comet",
+            "emoji": "☄️",
+            "description": "A special Comet from Outer Space",
+            "category": "Outer Space",
+            "rarity": "uncommon",
+            "locationId": "space",
+            "obtained": false
+        },
+        {
+            "id": "space_collectible_4",
+            "name": "Outer Space Alien",
+            "emoji": "👽",
+            "description": "A special Alien from Outer Space",
+            "category": "Outer Space",
+            "rarity": "rare",
+            "locationId": "space",
+            "obtained": false
+        },
+        {
+            "id": "space_collectible_5",
+            "name": "Outer Space UFO",
+            "emoji": "🛸",
+            "description": "A special UFO from Outer Space",
+            "category": "Outer Space",
+            "rarity": "rare",
+            "locationId": "space",
+            "obtained": false
+        },
+        {
+            "id": "space_collectible_6",
+            "name": "Golden Rocket",
+            "emoji": "🏆",
+            "description": "The ultimate prize from Outer Space!",
+            "category": "Outer Space",
+            "rarity": "legendary",
+            "locationId": "space",
+            "obtained": false
+        },
+        {
+            "id": "christmas_collectible_0",
+            "name": "Christmas Village Snowman",
+            "emoji": "⛄",
+            "description": "A special Snowman from Christmas Village",
+            "category": "Christmas Village",
+            "rarity": "common",
+            "locationId": "christmas",
+            "obtained": false
+        },
+        {
+            "id": "christmas_collectible_1",
+            "name": "Christmas Village Gift Box",
+            "emoji": "🎁",
+            "description": "A special Gift Box from Christmas Village",
+            "category": "Christmas Village",
+            "rarity": "common",
+            "locationId": "christmas",
+            "obtained": false
+        },
+        {
+            "id": "christmas_collectible_2",
+            "name": "Christmas Village Stocking",
+            "emoji": "🧦",
+            "description": "A special Stocking from Christmas Village",
+            "category": "Christmas Village",
+            "rarity": "uncommon",
+            "locationId": "christmas",
+            "obtained": false
+        },
+        {
+            "id": "christmas_collectible_3",
+            "name": "Christmas Village Jingle Bell",
+            "emoji": "🔔",
+            "description": "A special Jingle Bell from Christmas Village",
+            "category": "Christmas Village",
+            "rarity": "uncommon",
+            "locationId": "christmas",
+            "obtained": false
+        },
+        {
+            "id": "christmas_collectible_4",
+            "name": "Christmas Village Reindeer",
+            "emoji": "🦌",
+            "description": "A special Reindeer from Christmas Village",
+            "category": "Christmas Village",
+            "rarity": "rare",
+            "locationId": "christmas",
+            "obtained": false
+        },
+        {
+            "id": "christmas_collectible_5",
+            "name": "Christmas Village Christmas Tree",
+            "emoji": "🎄",
+            "description": "A special Christmas Tree from Christmas Village",
+            "category": "Christmas Village",
+            "rarity": "rare",
+            "locationId": "christmas",
+            "obtained": false
+        },
+        {
+            "id": "christmas_collectible_6",
+            "name": "Golden Star Ornament",
+            "emoji": "🏆",
+            "description": "The ultimate prize from Christmas Village!",
+            "category": "Christmas Village",
+            "rarity": "legendary",
+            "locationId": "christmas",
+            "obtained": false
+        },
+        {
+            "id": "casino_collectible_0",
+            "name": "Las Vegas Casino Cherry",
+            "emoji": "🍒",
+            "description": "A special Cherry from Las Vegas Casino",
+            "category": "Las Vegas Casino",
+            "rarity": "common",
+            "locationId": "casino",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T09:24:12.410Z"
+        },
+        {
+            "id": "casino_collectible_1",
+            "name": "Las Vegas Casino Lemon",
+            "emoji": "🍋",
+            "description": "A special Lemon from Las Vegas Casino",
+            "category": "Las Vegas Casino",
+            "rarity": "common",
+            "locationId": "casino",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T09:21:12.108Z"
+        },
+        {
+            "id": "casino_collectible_2",
+            "name": "Las Vegas Casino Grape",
+            "emoji": "🍇",
+            "description": "A special Grape from Las Vegas Casino",
+            "category": "Las Vegas Casino",
+            "rarity": "uncommon",
+            "locationId": "casino",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T09:28:30.721Z"
+        },
+        {
+            "id": "casino_collectible_3",
+            "name": "Las Vegas Casino Lucky Seven",
+            "emoji": "7️⃣",
+            "description": "A special Lucky Seven from Las Vegas Casino",
+            "category": "Las Vegas Casino",
+            "rarity": "uncommon",
+            "locationId": "casino",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T09:25:56.817Z"
+        },
+        {
+            "id": "casino_collectible_4",
+            "name": "Las Vegas Casino Diamond",
+            "emoji": "💎",
+            "description": "A special Diamond from Las Vegas Casino",
+            "category": "Las Vegas Casino",
+            "rarity": "rare",
+            "locationId": "casino",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T09:20:23.733Z"
+        },
+        {
+            "id": "casino_collectible_5",
+            "name": "Las Vegas Casino Lucky Charm",
+            "emoji": "🧲",
+            "description": "A special Lucky Charm from Las Vegas Casino",
+            "category": "Las Vegas Casino",
+            "rarity": "rare",
+            "locationId": "casino",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T09:32:46.685Z"
+        },
+        {
+            "id": "casino_collectible_6",
+            "name": "Golden Slot Machine",
+            "emoji": "🏆",
+            "description": "The ultimate prize from Las Vegas Casino!",
+            "category": "Las Vegas Casino",
+            "rarity": "legendary",
+            "locationId": "casino",
+            "obtained": true,
+            "obtainedDate": "2026-05-30T09:31:18.398Z"
+        },
+        {
+            "id": "japan_collectible_0",
+            "name": "Japanese Garden Sakura",
+            "emoji": "🌸",
+            "description": "A special Sakura from Japanese Garden",
+            "category": "Japanese Garden",
+            "rarity": "common",
+            "locationId": "japan",
+            "obtained": false
+        },
+        {
+            "id": "japan_collectible_1",
+            "name": "Japanese Garden Bamboo",
+            "emoji": "🎋",
+            "description": "A special Bamboo from Japanese Garden",
+            "category": "Japanese Garden",
+            "rarity": "common",
+            "locationId": "japan",
+            "obtained": false
+        },
+        {
+            "id": "japan_collectible_2",
+            "name": "Japanese Garden Fan",
+            "emoji": "🪭",
+            "description": "A special Fan from Japanese Garden",
+            "category": "Japanese Garden",
+            "rarity": "uncommon",
+            "locationId": "japan",
+            "obtained": false
+        },
+        {
+            "id": "japan_collectible_3",
+            "name": "Japanese Garden Koi Fish",
+            "emoji": "🐠",
+            "description": "A special Koi Fish from Japanese Garden",
+            "category": "Japanese Garden",
+            "rarity": "uncommon",
+            "locationId": "japan",
+            "obtained": false
+        },
+        {
+            "id": "japan_collectible_4",
+            "name": "Japanese Garden Torii Gate",
+            "emoji": "⛩️",
+            "description": "A special Torii Gate from Japanese Garden",
+            "category": "Japanese Garden",
+            "rarity": "rare",
+            "locationId": "japan",
+            "obtained": false
+        },
+        {
+            "id": "japan_collectible_5",
+            "name": "Japanese Garden Lucky Cat",
+            "emoji": "🐱",
+            "description": "A special Lucky Cat from Japanese Garden",
+            "category": "Japanese Garden",
+            "rarity": "rare",
+            "locationId": "japan",
+            "obtained": false
+        },
+        {
+            "id": "japan_collectible_6",
+            "name": "Golden Koi Fish",
+            "emoji": "🏆",
+            "description": "The ultimate prize from Japanese Garden!",
+            "category": "Japanese Garden",
+            "rarity": "legendary",
+            "locationId": "japan",
+            "obtained": false
+        },
+        {
+            "id": "farm_collectible_0",
+            "name": "Happy Farm Corn",
+            "emoji": "🌽",
+            "description": "A special Corn from Happy Farm",
+            "category": "Happy Farm",
+            "rarity": "common",
+            "locationId": "farm",
+            "obtained": false
+        },
+        {
+            "id": "farm_collectible_1",
+            "name": "Happy Farm Apple",
+            "emoji": "🍎",
+            "description": "A special Apple from Happy Farm",
+            "category": "Happy Farm",
+            "rarity": "common",
+            "locationId": "farm",
+            "obtained": false
+        },
+        {
+            "id": "farm_collectible_2",
+            "name": "Happy Farm Pig",
+            "emoji": "🐷",
+            "description": "A special Pig from Happy Farm",
+            "category": "Happy Farm",
+            "rarity": "uncommon",
+            "locationId": "farm",
+            "obtained": false
+        },
+        {
+            "id": "farm_collectible_3",
+            "name": "Happy Farm Cow",
+            "emoji": "🐄",
+            "description": "A special Cow from Happy Farm",
+            "category": "Happy Farm",
+            "rarity": "uncommon",
+            "locationId": "farm",
+            "obtained": false
+        },
+        {
+            "id": "farm_collectible_4",
+            "name": "Happy Farm Rooster",
+            "emoji": "🐓",
+            "description": "A special Rooster from Happy Farm",
+            "category": "Happy Farm",
+            "rarity": "rare",
+            "locationId": "farm",
+            "obtained": false
+        },
+        {
+            "id": "farm_collectible_5",
+            "name": "Happy Farm Horse",
+            "emoji": "🐴",
+            "description": "A special Horse from Happy Farm",
+            "category": "Happy Farm",
+            "rarity": "rare",
+            "locationId": "farm",
+            "obtained": false
+        },
+        {
+            "id": "farm_collectible_6",
+            "name": "Golden Tractor",
+            "emoji": "🏆",
+            "description": "The ultimate prize from Happy Farm!",
+            "category": "Happy Farm",
+            "rarity": "legendary",
+            "locationId": "farm",
+            "obtained": false
+        }
+    ],
+    "galleryUnlocks": [],
+    "spinHistory": [
+        {
+            "date": "2026-05-30",
+            "wins": 75,
+            "spins": 212
+        },
+        {
+            "date": "2026-05-31",
+            "wins": 11,
+            "spins": 20
+        }
+    ],
+    "soundEnabled": false,
+    "autoSpinEnabled": false,
+    "largeText": true,
+    "eventModifiers": {},
+    "reelSkin": "classic",
+    "unlockedSkins": [
+        "classic",
+        "emerald"
+    ],
+    "autoSpinCount": 0,
+    "autoSpinSessionCount": 0
+},
+  elderSlots_hasPlayed: true,
+  elderSlots_lastFreeSpinGrant: "2026-05-31T09:01:18.026Z",
+  elderSlots_streakBonus: 2
+};
+
+// Store each key in localStorage
+Object.entries(elderSlotsData).forEach(([key, value]) => {
+  localStorage.setItem(key, typeof value === "object" ? JSON.stringify(value) : value);
+});
+
+// Example retrieval
+const gameState = JSON.parse(localStorage.getItem("elderSlots_gameState"));
+console.log("Player:", gameState.playerName);
